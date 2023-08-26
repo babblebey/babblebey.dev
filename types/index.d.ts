@@ -15,6 +15,9 @@ export type SiteConfig = {
   links: {
     twitter: string
     github: string
+    linkedIn: string
+    email: string
+    openSauced: string
   }
 }
 

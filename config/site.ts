@@ -8,7 +8,10 @@ export const siteConfig: SiteConfig = {
   url: "https://babblebey.dev",
   ogImage: "https://babblebey.dev/og.jpg", // Pending
   links: {
-    twitter: "https://twitter.com/babblebey",
+    linkedIn: "https://linkedin.com/in/babblebey",
     github: "https://github.com/babblebey",
+    twitter: "https://twitter.com/babblebey",
+    openSauced: "https://insights.opensauced.pizza/user/babblebey/contributions",
+    email: "mailto:babblebey@gmail.com"
   },
 }
