@@ -16,12 +16,12 @@ export default async function IndexPage() {
   return (
     <>
       <section className="space-y-6 pb-8 pt-6 md:pb-12 md:pt-10 lg:py-32">
-        <div className="flex max-w-[64rem] flex-col gap-4">
+        <div className="flex max-w-3xl flex-col gap-4">
           <h1 className="font-heading font-bold text-3xl sm:text-5xl md:text-6xl">
             Hi, I&apos;m Olabode 👋🏽
           </h1>
           <p className="leading-normal text-muted-foreground sm:text-xl sm:leading-8">
-            I&apos;m a software developer passionate about crafting digital experiences. By day, I&apos;m building high-conversion websites at <ItbeyCo />, and by night, I&apos;m diving into the world of open source (OSS).
+            I&apos;m a software developer passionate about crafting digital experiences. By day, I&apos;m creating value implementing solutions for businesses at <ItbeyCo />, and by night, I&apos;m diving into the world of open source (OSS).
           </p>
           <div className="flex flex-wrap gap-4">
             <Link href="/login" className={cn(buttonVariants({ size: "lg" }))}>
@@ -39,7 +39,7 @@ export default async function IndexPage() {
         </div>
       </section>
 
-      <section className="space-y-6 pb-8 pt-6 md:pb-12 md:pt-10 lg:py-32">
+      <section className="space-y-6 pb-8 pt-6 md:pb-12 md:pt-10 lg:py-32" id="about">
         <div className="flex flex-col lg:flex-row gap-6">
           <div className="lg:w-2/5 lg:flex-none">
             <h2 className="font-heading font-bold tracking-tight text-4xl sm:text-5xl md:text-[4.8rem]">
@@ -71,6 +71,27 @@ export default async function IndexPage() {
                 )}
               )}
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="space-y-6 pb-8 pt-6 md:pb-12 md:pt-10 lg:py-32" id="tools">
+        <div className="flex max-w-5xl flex-col gap-6">
+          <h2 className="font-heading font-bold tracking-tight text-4xl sm:text-5xl md:text-[4.8rem]">
+            Tools & Libraries
+          </h2>
+          <p className="leading-normal text-muted-foreground sm:text-xl sm:leading-8">
+            At the heart of my approach to development is problem-solving. I believe in letting the challenges guide my choice of tools; PHP and TypeScript are my primary stack. However, my journey is peppered with diverse tools—both the ones I&apos;ve honed to mastery and those I&apos;ve adeptly wielded; Listed below are few:
+          </p>
+          <div className="flex flex-wrap gap-5">
+            {siteConfig.tools.map((tool, i) => {
+              const Icon = Icons[tool.toLowerCase() as keyof typeof Icons];
+              return (
+                <div key={i} className="flex items-center p-2 gap-2 sm:text-lg">
+                  <Icon className={cn("w-7 h-7", (tool === "NextJS" || tool === "WordPress") && "dark:invert")} /> {tool}
+                </div>
+              )
+            })}
           </div>
         </div>
       </section>

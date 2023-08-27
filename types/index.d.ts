@@ -19,6 +19,7 @@ export type SiteConfig = {
     email: string
     openSauced: string
   }
+  tools: string[]
 }
 
 export type NavConfig = {

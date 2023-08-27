@@ -14,4 +14,20 @@ export const siteConfig: SiteConfig = {
     openSauced: "https://insights.opensauced.pizza/user/babblebey/contributions",
     email: "mailto:babblebey@gmail.com"
   },
+  tools: [
+    "React",
+    "TypeScript",
+    "NextJS",
+    "PHP",
+    "TailwindCSS",
+    "Jest",
+    "Storybook",
+    "Playwright",
+    "Bootstrap",
+    "WordPress",
+    "MySQL",
+    "MongoDB",
+    "Redux",
+    "NodeJS"
+  ]
 }
