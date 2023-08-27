@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   ],
   creator: "babblebey",
   icons: {
-    icon: "/favicon.ico" // Pending
+    icon: "/favicon.ico"
   },
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "white" },
