@@ -6,6 +6,12 @@ import {
   CardHeader,
   CardTitle
 } from "@/components/ui/card";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 import { categories } from "@/data/projects";
 import { Icons } from "./icons";
 import Link from "next/link";
@@ -48,9 +54,18 @@ export function ProjectCard({ title, desc, image, category, url, linkText }: Pro
             { categories.filter((c) => c.title === category).map((cat, i) => {
                 const Icon = Icons[cat.icon as keyof typeof Icons];
                 return (
-                  <span key={i} className="flex items-center gap-2">
-                    <Icon className="h-4 w-4 stroke-sky-400 text-sky-400" /> { cat.title }
-                  </span>
+                  <TooltipProvider key={i}>
+                    <Tooltip>
+                      <TooltipTrigger asChild>
+                        <span className="flex items-center gap-2 cursor-help">
+                          <Icon className="h-4 w-4 stroke-sky-400 text-sky-400" /> { cat.title }
+                        </span>
+                      </TooltipTrigger>
+                      <TooltipContent>
+                        <p>{ cat.desc }</p>
+                      </TooltipContent>
+                    </Tooltip>
+                  </TooltipProvider>
                 )
               }
             ) }

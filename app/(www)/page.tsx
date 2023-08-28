@@ -98,7 +98,7 @@ export default async function IndexPage() {
         </div>
       </section>
       
-      <section className="space-y-6 pb-8 pt-6 md:pb-12 md:pt-10 lg:py-32" id="tools">
+      <section className="space-y-6 pb-8 pt-6 md:pb-12 md:pt-10 lg:py-32" id="projects">
         <div className="flex max-w-5xl flex-col gap-6">
           <h2 className="font-heading font-bold tracking-tight text-4xl sm:text-5xl md:text-[4.8rem]">
             Projects
