@@ -82,3 +82,7 @@ html {
 .m-itbey {
   @apply inline-flex gap-1 items-center align-bottom
 }
+
+.wip {
+  @apply text-[0.6rem] absolute bg-red-600 p-1 rounded-sm leading-none top-0 left-4 font-black
+}

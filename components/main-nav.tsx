@@ -40,7 +40,7 @@ export function MainNav({ items }: MainNavProps) {
                 <a key={index}
                   href={item.disabled ? "#" : item.href}
                   className={cn(
-                    "flex items-center text-lg font-medium transition-colors hover:text-foreground/80 sm:text-sm",
+                    "flex items-center text-lg font-medium transition-colors hover:text-foreground/80 sm:text-sm relative",
                     item.href.startsWith(`/${segment}`)
                       ? "text-foreground"
                       : "text-foreground/60",
@@ -48,6 +48,7 @@ export function MainNav({ items }: MainNavProps) {
                   )}
                 >
                   {item.title}
+                  {item.wip && <span className="wip">wip</span>}
                 </a>
               ))}
             </nav>

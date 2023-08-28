@@ -28,12 +28,13 @@ export function MobileNav({ items, setShowMobileMenu }: MobileNavProps) {
             <a key={index}
               href={item.disabled ? "#" : item.href}
               className={cn(
-                "flex w-full items-center rounded-md py-2 font-medium hover:underline",
+                "flex w-full items-center rounded-md py-2 font-medium hover:underline relative",
                 item.disabled && "cursor-not-allowed opacity-60"
               )}
               onClick={() => !item.disabled && setShowMobileMenu(false) }
             >
               {item.title}
+              {item.wip && <span className="wip">wip</span>}
             </a>
           ))}
         </nav>
