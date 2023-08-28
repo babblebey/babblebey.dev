@@ -25,3 +25,5 @@ export type SiteConfig = {
 export type NavConfig = {
   items: MainNavItem[]
 }
+
+export type Quote = string
