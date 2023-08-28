@@ -26,9 +26,9 @@ export default async function IndexPage() {
             I&apos;m a software developer passionate about crafting digital experiences. By day, I&apos;m creating value implementing solutions for businesses at <ItbeyCo />, and by night, I&apos;m diving into the world of open source (OSS).
           </p>
           <div className="flex flex-wrap gap-4">
-            <Link href="/#about" className={cn(buttonVariants({ size: "lg" }))}>
+            <a href="#about" className={cn(buttonVariants({ size: "lg" }))}>
               Learn More
-            </Link>
+            </a>
             <Link
               href={siteConfig.links.openSauced}
               target="_blank"

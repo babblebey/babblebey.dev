@@ -37,8 +37,7 @@ export function MainNav({ items }: MainNavProps) {
           {items?.length ? (
             <nav className="hidden md:flex gap-6">
               {items?.map((item, index) => (
-                <Link
-                  key={index}
+                <a key={index}
                   href={item.disabled ? "#" : item.href}
                   className={cn(
                     "flex items-center text-lg font-medium transition-colors hover:text-foreground/80 sm:text-sm",
@@ -49,7 +48,7 @@ export function MainNav({ items }: MainNavProps) {
                   )}
                 >
                   {item.title}
-                </Link>
+                </a>
               ))}
             </nav>
           ) : null}

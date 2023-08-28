@@ -25,8 +25,7 @@ export function MobileNav({ items, setShowMobileMenu }: MobileNavProps) {
       <div className="relative z-20 grid gap-6 rounded-md bg-popover p-4 pt-2 text-popover-foreground shadow-md">
         <nav className="grid grid-flow-row auto-rows-max text-sm">
           {items.map((item, index) => (
-            <Link
-              key={index}
+            <a key={index}
               href={item.disabled ? "#" : item.href}
               className={cn(
                 "flex w-full items-center rounded-md py-2 font-medium hover:underline",
@@ -35,7 +34,7 @@ export function MobileNav({ items, setShowMobileMenu }: MobileNavProps) {
               onClick={() => !item.disabled && setShowMobileMenu(false) }
             >
               {item.title}
-            </Link>
+            </a>
           ))}
         </nav>
         <Link href="/" className="flex items-center space-x-2">

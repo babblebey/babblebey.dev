@@ -13,11 +13,11 @@ export const navConfig: NavConfig = {
     },
     {
       title: "Tools",
-      href: "/#tools"
+      href: "#tools"
     },
     {
       title: "Projects",
-      href: "/#projects"
+      href: "#projects"
     },
   ]
 }
