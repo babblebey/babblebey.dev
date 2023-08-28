@@ -4,7 +4,7 @@ export const siteConfig: SiteConfig = {
   title: "Olabode Lawal-Shittabey",
   author: "babblebey",
   description:
-    "An open source application built using the new router, server components and everything new in Next.js 13.", // Pending
+    "A software developer passionate about crafting digital experiences. By day, I'm creating value implementing solutions for businesses at itbey Co., and by night, I'm diving into the world of open source (OSS)",
   url: "https://babblebey.dev",
   ogImage: "https://babblebey.dev/og.jpg", // Pending
   links: {
