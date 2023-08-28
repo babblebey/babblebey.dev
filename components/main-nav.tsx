@@ -17,8 +17,13 @@ interface MainNavProps {
 export function MainNav({ items }: MainNavProps) {
   const segment = useSelectedLayoutSegment();
   const [showMobileMenu, setShowMobileMenu] = React.useState<boolean>(false);
+  const [host, setHost] = React.useState("");
 
-  const host = window && window.location.origin;
+  React.useEffect(() => {
+    if (typeof window !== "undefined") {
+      setHost(window.location.origin as string);
+    }
+  }, []);
 
   return (
     <header>
