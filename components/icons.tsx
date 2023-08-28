@@ -7,7 +7,12 @@ import {
   Twitter,
   Mail,
   Github,
-  Pizza
+  Pizza,
+  Briefcase,
+  Code2,
+  Lightbulb,
+  PencilRuler,
+  ExternalLink
 } from "lucide-react";
 
 export type Icon = LucideIcon;
@@ -20,6 +25,11 @@ export const Icons = {
   email: Mail,
   github: Github,
   openSauced: Pizza,
+  briefcase: Briefcase,
+  code: Code2,
+  lightbulb: Lightbulb,
+  tool: PencilRuler,
+  externalLink: ExternalLink,
   logo: ({ ...props }: LucideProps) => (
     <svg width="24" height="24" viewBox="0 0 190 190" version="1.1" 
       style={{shapeRendering:"geometricPrecision", textRendering:"geometricPrecision", fillRule:"evenodd", clipRule:"evenodd"}}

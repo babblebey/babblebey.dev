@@ -3,8 +3,10 @@ import Image from "next/image";
 import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "@/components/ui/button";
-import Capitalise from "@/components/capitalise";
+import { Capitalise } from "@/components/capitalise";
 import { Icons } from "@/components/icons";
+import { ProjectCard } from "@/components/project-card";
+import { projects } from "@/data/projects";
 
 const ItbeyCo = () => (
   <a href="https://itbey.com" target="_blank">
@@ -24,7 +26,7 @@ export default async function IndexPage() {
             I&apos;m a software developer passionate about crafting digital experiences. By day, I&apos;m creating value implementing solutions for businesses at <ItbeyCo />, and by night, I&apos;m diving into the world of open source (OSS).
           </p>
           <div className="flex flex-wrap gap-4">
-            <Link href="/login" className={cn(buttonVariants({ size: "lg" }))}>
+            <Link href="/#about" className={cn(buttonVariants({ size: "lg" }))}>
               Get Started
             </Link>
             <Link
@@ -92,6 +94,22 @@ export default async function IndexPage() {
                 </div>
               )
             })}
+          </div>
+        </div>
+      </section>
+      
+      <section className="space-y-6 pb-8 pt-6 md:pb-12 md:pt-10 lg:py-32" id="tools">
+        <div className="flex max-w-5xl flex-col gap-6">
+          <h2 className="font-heading font-bold tracking-tight text-4xl sm:text-5xl md:text-[4.8rem]">
+            Projects
+          </h2> 
+          <p className="leading-normal text-muted-foreground sm:text-xl sm:leading-8">
+            I like to engineer solutions that make a difference. Whether it&apos;s crafting problem-solving applications for businesses, creating tools that streamline my workflow or just hacking around with some ideas, innovation drives me. Here&apos;s a curated project collection, ranging from empowering business solutions to personal hacks that have either aided my learning or transformed my productivity:
+          </p>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {projects.map((p, i) => (
+              <ProjectCard key={i} {...p} />
+            ))}
           </div>
         </div>
       </section>
