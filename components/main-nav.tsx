@@ -3,21 +3,22 @@
 import * as React from "react";
 import Link from "next/link";
 import { useSelectedLayoutSegment } from "next/navigation";
-
-import type { MainNavItem } from "@/types";
-import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
+import { siteConfig } from "@/config/site";
 import { Icons } from "@/components/icons";
 import { buttonVariants } from "@/components/ui/button";
 import { MobileNav } from "@/components/mobile-nav";
+import type { MainNavItem } from "@/types";
 
 interface MainNavProps {
   items?: MainNavItem[]
 }
 
 export function MainNav({ items }: MainNavProps) {
-  const segment = useSelectedLayoutSegment()
-  const [showMobileMenu, setShowMobileMenu] = React.useState<boolean>(false)
+  const segment = useSelectedLayoutSegment();
+  const [showMobileMenu, setShowMobileMenu] = React.useState<boolean>(false);
+
+  const host = window && window.location.origin;
 
   return (
     <header>
@@ -66,7 +67,7 @@ export function MainNav({ items }: MainNavProps) {
         </div>
         <nav>
           <Link
-            href="/resume"
+            href={`${host}/001-olabode-lawal-shittabey-resume.pdf`}
             className={cn(
               buttonVariants({ variant: "secondary", size: "sm" }),
               "px-4 gap-2"
