@@ -8,15 +8,16 @@ export const navConfig: NavConfig = {
     },
     {
       title: "Blog",
-      href: "/blog"
+      href: "/blog",
+      disabled: true // Pending Feature Built
+    },
+    {
+      title: "Tools",
+      href: "/#tools"
     },
     {
       title: "Projects",
       href: "/#projects"
     },
-    {
-      title: "Tools",
-      href: "/#tools"
-    }
   ]
 }

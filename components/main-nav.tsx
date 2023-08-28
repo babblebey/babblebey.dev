@@ -54,14 +54,14 @@ export function MainNav({ items }: MainNavProps) {
             </nav>
           ) : null}
           <button
-            className="flex items-center space-x-2 md:hidden"
+            className="flex items-center space-x-2 md:hidden focus-visible:outline-0 focus-visible:border-0 focus-within:outline-0 focus-within:border-0"
             onClick={() => setShowMobileMenu(!showMobileMenu)}
           >
             {showMobileMenu ? <Icons.cancel /> : <Icons.logo className="w-6 h-6 dark:invert"/>}
             <span className="font-bold">Menu</span>
           </button>
           {showMobileMenu && items && (
-            <MobileNav items={items} />
+            <MobileNav items={items} setShowMobileMenu={setShowMobileMenu} />
           )}
         </div>
         <nav>
