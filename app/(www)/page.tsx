@@ -27,10 +27,10 @@ export default async function IndexPage() {
           </p>
           <div className="flex flex-wrap gap-4">
             <Link href="/#about" className={cn(buttonVariants({ size: "lg" }))}>
-              Get Started
+              Learn More
             </Link>
             <Link
-              href={siteConfig.links.github}
+              href={siteConfig.links.openSauced}
               target="_blank"
               rel="noreferrer"
               className={cn(buttonVariants({ variant: "outline", size: "lg" }), "gap-3 ")}
