@@ -44,8 +44,7 @@ export function ProjectCard({ title, desc, image, category, url, linkText }: Pro
       </CardHeader>
       <CardContent>
         <div className="flex justify-between text-sm text-muted-foreground">
-          <div className="flex items-center py-1 px-2 rounded border text-uppercase">
-            {/* <CircleIcon className="mr-1 h-3 w-3 fill-sky-400 text-sky-400" /> */}
+          <div className="flex items-center">
             { categories.filter((c) => c.title === category).map((cat, i) => {
                 const Icon = Icons[cat.icon as keyof typeof Icons];
                 return (
@@ -56,7 +55,6 @@ export function ProjectCard({ title, desc, image, category, url, linkText }: Pro
               }
             ) }
           </div>
-          {/* <StarIcon className="mr-1 h-3 w-3" /> */}
           <Link href={url} className="flex items-center hover:underline" target="_blank">
             { linkText }
             <Icons.externalLink className="ml-1 h-3 w-3" />

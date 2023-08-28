@@ -1,29 +1,31 @@
-export const categories = [
+import { Project, ProjectCategoryObj } from "@/types";
+
+export const categories: ProjectCategoryObj[] = [
   {
-    title: "itbey",
+    title: "itbey Co.",
     icon: "briefcase",
-    desc: ""
+    desc: "In-production projects crafted for businesses at itbey Co."
   },
   {
     title: "hack",
     icon: "lightbulb",
-    desc: ""
+    desc: "Some 'dumb' ideas I have played or currently playing with."
   },
   {
     title: "tool",
     icon: "tool",
-    desc: ""
+    desc: "Tools that I've created to remove repitition from my workflow."
   },
 ]
 
-export const projects = [
+export const projects: Project[] = [
   {
     title: "RobustHR",
     url: "https://robusthr.com",
     linkText: "View Website",
     image: "/robusthr.png",
     desc: "A product website for an all-in-one HR management software.",
-    category: "itbey"
+    category: "itbey Co."
   },
   {
     title: "Multifreight Nig. Ltd.",
@@ -31,7 +33,7 @@ export const projects = [
     linkText: "View Website",
     image: "/mfn.png",
     desc: "A website developed for logistic and supply chain company in Nigeria.",
-    category: "itbey"
+    category: "itbey Co."
   },
   {
     title: "Cybernetics Oil (CISL)",
@@ -39,6 +41,6 @@ export const projects = [
     linkText: "Visit Website",
     image: "/cisl.png",
     desc: "A website developed for a petroleum products trading company in Nigeria.",
-    category: "itbey"
+    category: "itbey Co."
   },
 ];

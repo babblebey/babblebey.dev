@@ -27,3 +27,20 @@ export type NavConfig = {
 }
 
 export type Quote = string
+
+export type Project = {
+  title: string
+  url: string
+  linkText: string
+  image: string
+  desc: string
+  category: ProjectCategory
+}
+
+export type ProjectCategoryObj = {
+  title: ProjectCategory
+  icon: string
+  desc: string
+}
+
+export type ProjectCategory = "itbey Co." | "hack" | "tool"
