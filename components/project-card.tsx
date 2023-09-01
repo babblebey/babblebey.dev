@@ -27,7 +27,7 @@ interface ProjectCardProps {
 
 export function ProjectCard({ title, desc, image, category, url, linkText }: ProjectCardProps) {
   return (
-    <Card className="flex flex-col overflow-hidden">
+    <Card className="basis-full md:basis-[49%] lg:basis-[32.33%] mb-4 flex flex-col overflow-hidden">
       <div className="aspect-[1.4] overflow-hidden min-h-[230px]">
         <CardImage 
           src={image}
