@@ -19,7 +19,7 @@ export default async function IndexPage() {
     <>
       <section className="space-y-6 pb-8 pt-6 md:pb-12 md:pt-10 lg:py-32">
         <div className="flex max-w-3xl flex-col gap-4">
-          <h1 className="font-heading font-bold text-3xl sm:text-5xl md:text-6xl">
+          <h1 className="font-heading font-black text-4xl md:text-5xl lg:text-[5rem]">
             Hi, I&apos;m Olabode 👋🏽
           </h1>
           <p className="leading-normal text-muted-foreground sm:text-xl sm:leading-8">
@@ -44,10 +44,10 @@ export default async function IndexPage() {
       <section className="space-y-6 pb-8 pt-6 md:pb-12 md:pt-10 lg:py-32" id="about">
         <div className="flex flex-col lg:flex-row gap-6">
           <div className="lg:w-2/5 lg:flex-none">
-            <h2 className="font-heading font-bold tracking-tight text-4xl sm:text-5xl md:text-[4.8rem]">
+            <h2 className="font-heading font-black tracking-tight text-4xl md:text-5xl lg:text-[5rem]">
               <Image 
                 src="/babblebey.png" 
-                className="h-10 w-10 md:h-20 md:w-20 border-2 rounded-full inline-block mr-2 md:mr-4 -mt-1 md:-mt-6" 
+                className="h-10 w-10 md:h-14 md:w-14 lg:h-20 lg:w-20 border-2 rounded-full inline-block mr-2 md:mr-4 -mt-1 md:-mt-3 lg:-mt-6" 
                 alt="Olabode" 
                 width={100}
                 height={100}  
@@ -79,7 +79,7 @@ export default async function IndexPage() {
 
       <section className="space-y-6 pb-8 pt-6 md:pb-12 md:pt-10 lg:py-32" id="tools">
         <div className="flex max-w-5xl flex-col gap-6">
-          <h2 className="font-heading font-bold tracking-tight text-4xl sm:text-5xl md:text-[4.8rem]">
+          <h2 className="font-heading font-black tracking-tight text-4xl md:text-5xl lg:text-[5rem]">
             Tools & Libraries
           </h2>
           <p className="leading-normal text-muted-foreground sm:text-xl sm:leading-8">
@@ -100,7 +100,7 @@ export default async function IndexPage() {
       
       <section className="space-y-6 pb-8 pt-6 md:pb-12 md:pt-10 lg:py-32" id="projects">
         <div className="flex max-w-5xl flex-col gap-6">
-          <h2 className="font-heading font-bold tracking-tight text-4xl sm:text-5xl md:text-[4.8rem]">
+          <h2 className="font-heading font-black tracking-tight text-4xl md:text-5xl lg:text-[5rem]">
             Projects
           </h2> 
           <p className="leading-normal text-muted-foreground sm:text-xl sm:leading-8">

@@ -1,10 +1,19 @@
 import "@/styles/globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Bricolage_Grotesque } from "next/font/google";
 import { siteConfig } from "@/config/site";
 import { ThemeProvider } from "@/components/theme-provider";
+import { cn } from "@/lib/utils";
 
-const inter = Inter({ subsets: ['latin'] });
+const fontSans = Inter({ 
+  subsets: ['latin'],
+  variable: "--font-sans"
+});
+
+const fontHeading = Bricolage_Grotesque({
+  subsets: ['latin'],
+  variable: "--font-heading"
+});
 
 export const metadata: Metadata = {
   title: {
@@ -59,7 +68,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={cn("font-sans", fontSans.variable, fontHeading.variable)}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}
         </ThemeProvider>
