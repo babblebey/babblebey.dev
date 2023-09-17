@@ -1,4 +1,4 @@
-import { useCapitalise } from "@/hooks/use-capitalise";
+import { useCapitalise } from "@/lib/hooks/use-capitalise";
 
 interface CapitaliseProps {
   text: string
