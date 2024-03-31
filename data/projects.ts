@@ -14,11 +14,19 @@ export const categories: ProjectCategoryObj[] = [
   {
     title: "tool",
     icon: "tool",
-    desc: "Tools that I've created to remove repitition from my workflow."
+    desc: "Tools that I've created to (ease steps or) remove repitition from my workflow."
   },
 ]
 
 export const projects: Project[] = [
+  {
+    title: "Private Key Converter",
+    url: "https://private-key-converter.vercel.app",
+    linkText: "Check it out",
+    image: "/private-key-converter.png",
+    desc: "A web interface where you convert private key formats.",
+    category: "tool"
+  },
   {
     title: "RobustHR",
     url: "https://robusthr.com",
