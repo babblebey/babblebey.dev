@@ -5,6 +5,7 @@ import { Capitalise } from "@/components/capitalise";
 import { buttonVariants } from "@/components/ui/button";
 import { getAProblemFirstQuote } from "@/data/problem-first-quote";
 import type { SiteConfig } from "@/types";
+import { ThemeToggle } from "./theme-toggle";
 
 interface FooterProps extends SiteConfig {}
 
@@ -48,7 +49,10 @@ export function Footer({ title, author, links }: FooterProps) {
           </div>
         </div>
 
-        <p className="text-sm text-muted-foreground">© { (new Date).getFullYear() } { title }.</p>
+        <div className="flex items-center justify-between">
+          <p className="text-sm text-muted-foreground">© { (new Date).getFullYear() } { title }.</p>
+          <ThemeToggle />
+        </div>
       </div>
     </footer>
   )
