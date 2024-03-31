@@ -22,7 +22,7 @@ export const projects: Project[] = [
   {
     title: "Private Key Converter",
     url: "https://private-key-converter.vercel.app",
-    linkText: "View Website",
+    linkText: "Check it out",
     image: "/private-key-converter.png",
     desc: "A web interface where you convert private key formats.",
     category: "tool"
