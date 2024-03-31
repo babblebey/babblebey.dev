@@ -25,7 +25,7 @@ export const projects: Project[] = [
     linkText: "View Website",
     image: "/private-key-converter.png",
     desc: "A web interface where you convert private key formats.",
-    category: "tools"
+    category: "tool"
   },
   {
     title: "RobustHR",
