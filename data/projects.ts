@@ -20,6 +20,14 @@ export const categories: ProjectCategoryObj[] = [
 
 export const projects: Project[] = [
   {
+    title: "jargons.dev",
+    url: "https://jargons.dev",
+    linkText: "Check it out",
+    image: "/jargons.dev.png",
+    desc: "A community-driven dictionary that simplifies software engineering terms.",
+    category: "hack"
+  },
+  {
     title: "Private Key Converter",
     url: "https://private-key-converter.vercel.app",
     linkText: "Check it out",
