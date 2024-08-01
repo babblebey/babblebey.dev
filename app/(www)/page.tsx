@@ -106,7 +106,7 @@ export default async function IndexPage() {
           <p className="leading-normal text-muted-foreground sm:text-xl sm:leading-8">
             I like to engineer solutions that make a difference. Whether it&apos;s crafting problem-solving applications for businesses, creating tools that streamline my workflow or just hacking around with some ideas, innovation drives me. Here&apos;s a curated project collection, ranging from empowering business solutions to personal hacks that have either aided my learning or transformed my productivity:
           </p>
-          <div className="flex flex-wrap justify-between md:justify-normal md:gap-3">
+          <div className="flex flex-wrap justify-between">
             {projects.map((p, i) => (
               <ProjectCard key={i} {...p} />
             ))}
