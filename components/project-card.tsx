@@ -34,7 +34,7 @@ export function ProjectCard({ title, desc, image, category, url, linkText }: Pro
           width={900}
           height={300}
           alt={title}
-          className="w-full h-full object-cover object-left-top hover:scale-125 transition-transform ease-linear"
+          className="w-full h-full object-cover object-center-top hover:scale-125 transition-transform ease-linear"
           loading="lazy"
         />
       </div>
