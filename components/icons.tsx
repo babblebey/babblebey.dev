@@ -15,7 +15,8 @@ import {
   ExternalLink,
   Sun,
   MoonStar,
-  Laptop
+  Laptop,
+  GitPullRequest
 } from "lucide-react";
 
 export type Icon = LucideIcon;
@@ -36,6 +37,7 @@ export const Icons = {
   sun: Sun,
   moon: MoonStar,
   laptop: Laptop,
+  oss: GitPullRequest,
   logo: ({ ...props }: LucideProps) => (
     <svg width="24" height="24" viewBox="0 0 190 190" version="1.1" 
       style={{shapeRendering:"geometricPrecision", textRendering:"geometricPrecision", fillRule:"evenodd", clipRule:"evenodd"}}
