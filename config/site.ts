@@ -14,19 +14,19 @@ export const siteConfig: SiteConfig = {
     email: "mailto:babblebey@gmail.com"
   },
   tools: [
-    "React",
+    "JavaScript",
     "TypeScript",
+    "React",
     "NextJS",
+    "NodeJS",
     "PHP",
-    "TailwindCSS",
-    "Jest",
-    "Storybook",
-    "Playwright",
-    "Bootstrap",
     "WordPress",
     "MySQL",
-    "MongoDB",
-    "Redux",
-    "NodeJS"
+    "PostgreSQL",
+    "TailwindCSS",
+    "Bootstrap",
+    "Storybook",
+    "Playwright",
+    "Redux"
   ]
 }
