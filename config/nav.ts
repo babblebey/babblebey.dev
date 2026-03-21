@@ -8,9 +8,9 @@ export const navConfig: NavConfig = {
     },
     {
       title: "Blog",
-      href: "/blog",
-      disabled: true, // Pending Feature Built
-      wip: true
+      href: "https://dev.to/babblebey",
+      // disabled: true, // Pending Feature Built
+      // wip: true
     },
     {
       title: "Tools",
