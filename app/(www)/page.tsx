@@ -10,7 +10,7 @@ import { projects } from "@/data/projects";
 
 const ItbeyCo = () => (
   <a href="https://itbey.com" target="_blank">
-    <span className="m-itbey"><Icons.itbey className="ml-1 p-1 md:p-0" /> itbey Co.</span>
+    <span className="m-itbey"><Icons.itbey className="h-5 w-5 md:h-6 md:w-6 ml-1 md:p-0" /> itbey Co.</span>
   </a>
 );
 
@@ -30,7 +30,7 @@ export default async function IndexPage() {
               Learn More
             </a>
             <Link
-              href={siteConfig.links.openSauced}
+              href="https://github.com/babblebey"
               target="_blank"
               rel="noreferrer"
               className={cn(buttonVariants({ variant: "outline", size: "lg" }), "gap-3 ")}

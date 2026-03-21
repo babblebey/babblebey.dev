@@ -18,7 +18,6 @@ export type SiteConfig = {
     github: string
     linkedIn: string
     email: string
-    openSauced: string
   }
   tools: string[]
 }
