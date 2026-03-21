@@ -43,4 +43,4 @@ export type ProjectCategoryObj = {
   desc: string
 }
 
-export type ProjectCategory = "itbey Co." | "hack" | "tool"
+export type ProjectCategory = "itbey Co." | "hack" | "tool" | "open source"
