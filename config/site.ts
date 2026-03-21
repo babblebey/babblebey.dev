@@ -11,7 +11,6 @@ export const siteConfig: SiteConfig = {
     linkedIn: "https://linkedin.com/in/babblebey",
     github: "https://github.com/babblebey",
     twitter: "https://twitter.com/babblebey",
-    openSauced: "https://insights.opensauced.pizza/user/babblebey/contributions",
     email: "mailto:babblebey@gmail.com"
   },
   tools: [

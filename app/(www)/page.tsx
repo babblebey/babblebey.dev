@@ -30,7 +30,7 @@ export default async function IndexPage() {
               Learn More
             </a>
             <Link
-              href={siteConfig.links.openSauced}
+              href="https://github.com/babblebey"
               target="_blank"
               rel="noreferrer"
               className={cn(buttonVariants({ variant: "outline", size: "lg" }), "gap-3 ")}
